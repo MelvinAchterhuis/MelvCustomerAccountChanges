@@ -1,0 +1,27 @@
+{
+    "name": "melvinachterhuis/customer-account-changes-plugin",
+    "description": "Dispatch events when important changes happen in customer account for Shopware 6",
+    "version": "0.0.1",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Melvin Achterhuis"
+        }
+    ],
+    "require": {
+        "shopware/core": "6.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Melv\\CustomerAccountChanges\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Melv\\CustomerAccountChanges\\MelvCustomerAccountChanges",
+        "label": {
+            "de-DE": "Account Änderungen",
+            "en-GB": "Account changes"
+        }
+    }
+}
